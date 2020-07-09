@@ -1,0 +1,45 @@
+.view-main {
+  margin-top: 30px;
+  width: 100%;
+
+  ul {
+    list-style: none;
+
+    li {
+      display: grid;
+      grid-template-columns: 1fr 60px 60px;
+      height: 2rem;
+      background-color: #fff;
+      margin-bottom: 4px;
+      transition: 0.3s;
+
+      &.done {
+        opacity: 0.5;
+      }
+
+      p {
+        line-height: 2rem;
+        text-indent: 1rem;
+      }
+
+      span {
+        color: #fff;
+        text-align: center;
+        line-height: 2rem;
+        cursor: pointer;
+
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+
+      .done {
+        background-color: #65d0a6;
+      }
+
+      .delete {
+        background-color: rgb(252, 100, 100);
+      }
+    }
+  }
+}
